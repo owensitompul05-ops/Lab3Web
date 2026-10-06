@@ -45,6 +45,9 @@ Lab3Web/
 │   ├── 06_eksperimen_css.png
 │   ├── 07_prioritas_css.png
 │   └── 08_id_vs_class.png
+├── Laporan_Praktikum_3_CSS_Dasar.pdf # Berkas laporan praktikum format PDF siap cetak
+├── generate_pdf.py              # Skrip otomasi konversi Markdown ke PDF
+├── laporan.html                 # Versi HTML laporan praktikum (standalone)
 └── README.md                    # Laporan lengkap pelaksanaan praktikum
 ```
 
@@ -73,11 +76,9 @@ Pada tahap pertama, dibuat dokumen HTML dasar tanpa aturan CSS pada berkas `lab2
         <a href="lab2_css_eksternal.html">CSS Eksternal</a>
         <a href="lab1_tag_dasar.html">HTML Dasar</a>
     </nav>
-    <!-- CSS ID Selector -->
     <div id="intro">
         <h1>Hello World</h1>
         <p>Kami sedang belajar HTML dan CSS dasar, pada mata kuliah <b>Pemrograman Web</b> di <i>Universitas Pelita Bangsa</i>. Pelajaran pertama yang kami dapat adalah membuat tampilan web sederhana dalam rangka mengenal tag-tag dasar HTML dan CSS.</p>
-        <!-- CSS Class Selector -->
         <a class="button btn-primary" href="#intro">Informasi selengkapnya.</a>
     </div>
 </body>
@@ -161,7 +162,6 @@ nav a:hover {
 
 **Tag Penghubung pada `lab2_css_dasar.html`:**
 ```html
-<!-- menyisipkan css eksternal -->
 <link rel="stylesheet" href="style_eksternal.css" type="text/css">
 ```
 
@@ -177,7 +177,6 @@ Melengkapi `style_eksternal.css` dengan aturan untuk ID Selector (`#intro`, `#in
 
 **Tambahan Kode pada `style_eksternal.css`:**
 ```css
-/* ID Selector */
 #intro {
     background: #418fb1;
     border: 1px solid #099249;
@@ -190,7 +189,6 @@ Melengkapi `style_eksternal.css` dengan aturan untuk ID Selector (`#intro`, `#in
     color: #fff;
 }
 
-/* Class Selector */
 .button {
     padding: 15px 20px;
     background: #bebcbd;
@@ -269,15 +267,12 @@ Browser menerapkan konsep **Cascading & Specificity Hierarchy** dalam menentukan
 
 **Bukti Demonstrasi Kode ([tugas_prioritas.html](tugas_prioritas.html)):**
 ```html
-<!-- Eksternal: color: #2563eb (Biru) -->
 <link rel="stylesheet" href="tugas_prioritas.css">
 
-<!-- Internal: color: #16a34a (Hijau) -->
 <style>
     .uji-prioritas { color: #16a34a; font-weight: bold; }
 </style>
 
-<!-- Inline: color: #dc2626 (Merah) -->
 <div class="uji-prioritas" style="color: #dc2626;">
     Teks pengujian prioritas warna
 </div>
@@ -306,13 +301,13 @@ Karena bobot ID Selector (100) jauh lebih besar daripada Class Selector (10), ma
 **Bukti Demonstrasi Kode ([tugas_spesifisitas.html](tugas_spesifisitas.html)):**
 ```css
 #paragraf-1 {
-    color: #dc2626; /* Merah */
+    color: #dc2626;
     font-size: 20px;
     font-weight: bold;
 }
 
 .text-paragraf {
-    color: #2563eb; /* Biru */
+    color: #2563eb;
     font-size: 14px;
 }
 ```

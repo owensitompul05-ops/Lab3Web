@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uji Coba Spesifisitas: ID Selector vs Class Selector</title>
     <style>
-        /* Class Selector dideklarasikan setelah ID untuk menguji urutan vs spesifisitas */
         #paragraf-1 {
-            color: #dc2626; /* Merah */
+            color: #dc2626;
             font-size: 20px;
             font-weight: bold;
             background-color: #fee2e2;
@@ -16,7 +15,7 @@
         }
 
         .text-paragraf {
-            color: #2563eb; /* Biru */
+            color: #2563eb;
             font-size: 14px;
             font-weight: normal;
             background-color: #dbeafe;
@@ -29,7 +28,6 @@
     <h2>Pembuktian Pertanyaan 4: ID Selector vs Class Selector</h2>
     <p>Elemen di bawah ini memiliki atribut <code>id="paragraf-1"</code> (merah, 20px, bold) dan <code>class="text-paragraf"</code> (biru, 14px, normal):</p>
 
-    <!-- Elemen dengan ID dan Class sekaligus -->
     <p id="paragraf-1" class="text-paragraf">
         &bull; Ini adalah elemen: &lt;p id="paragraf-1" class="text-paragraf"&gt;<br>
         <strong>Hasil Tampilan:</strong> Warna teks adalah <u>MERAH</u> dan ukuran teks <u>20px Bold</u>.

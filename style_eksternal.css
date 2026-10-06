@@ -13,7 +13,6 @@ nav a:hover {
     background: #0B6B3A;
 }
 
-/* ID Selector */
 #intro {
     background: #418fb1;
     border: 1px solid #099249;
@@ -26,7 +25,6 @@ nav a:hover {
     color: #fff;
 }
 
-/* Class Selector */
 .button {
     padding: 15px 20px;
     background: #bebcbd;

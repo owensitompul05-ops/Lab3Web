@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uji Coba Prioritas CSS: Inline vs Internal vs Eksternal</title>
-    <!-- 1. CSS Eksternal (mendeklarasikan color: #2563eb / biru) -->
     <link rel="stylesheet" href="tugas_prioritas.css">
     
-    <!-- 2. CSS Internal (mendeklarasikan color: #16a34a / hijau) -->
     <style>
         .uji-prioritas {
-            color: #16a34a; /* Warna Hijau dari Internal */
+            color: #16a34a;
             font-weight: bold;
         }
     </style>
@@ -19,7 +17,6 @@
     <h2>Pembuktian Pertanyaan 3: Prioritas CSS (Inline vs Internal vs Eksternal)</h2>
     <p>Di bawah ini elemen yang dideklarasikan secara Eksternal (biru), Internal (hijau), dan Inline (merah):</p>
 
-    <!-- 3. Inline CSS diterapkan langsung pada elemen -->
     <div class="uji-prioritas" style="color: #dc2626; border-color: #dc2626;">
         Teks ini memiliki aturan warna dari CSS Eksternal (biru), CSS Internal (hijau), dan Inline CSS (merah).
         <br><br>
