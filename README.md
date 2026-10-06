@@ -9,9 +9,9 @@
 ## 📌 Identitas Mahasiswa
 | Data | Keterangan |
 | :--- | :--- |
-| **Nama** | [Nama Mahasiswa] |
-| **NIM** | [NIM Mahasiswa] |
-| **Kelas** | [Kelas] |
+| **Nama** | [Margent ouwen sitompul] |
+| **NIM** | [312510463] |
+| **Kelas** | [I252A] |
 | **Program Studi** | Teknik Informatika |
 
 ---
