@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uji Coba Spesifisitas: ID Selector vs Class Selector</title>
+    <style>
+        /* Class Selector dideklarasikan setelah ID untuk menguji urutan vs spesifisitas */
+        #paragraf-1 {
+            color: #dc2626; /* Merah */
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #fee2e2;
+            padding: 12px;
+            border-left: 5px solid #dc2626;
+        }
+
+        .text-paragraf {
+            color: #2563eb; /* Biru */
+            font-size: 14px;
+            font-weight: normal;
+            background-color: #dbeafe;
+            padding: 20px;
+            border-left: 5px solid #2563eb;
+        }
+    </style>
+</head>
+<body style="font-family: Arial, sans-serif; padding: 25px; background: #f8fafc;">
+    <h2>Pembuktian Pertanyaan 4: ID Selector vs Class Selector</h2>
+    <p>Elemen di bawah ini memiliki atribut <code>id="paragraf-1"</code> (merah, 20px, bold) dan <code>class="text-paragraf"</code> (biru, 14px, normal):</p>
+
+    <!-- Elemen dengan ID dan Class sekaligus -->
+    <p id="paragraf-1" class="text-paragraf">
+        &bull; Ini adalah elemen: &lt;p id="paragraf-1" class="text-paragraf"&gt;<br>
+        <strong>Hasil Tampilan:</strong> Warna teks adalah <u>MERAH</u> dan ukuran teks <u>20px Bold</u>.
+    </p>
+
+    <div style="margin-top: 15px; padding: 12px; background: #f1f5f9; border-radius: 6px; font-size: 14px; color: #334155;">
+        <strong>Penjelasan Teknis:</strong> ID selector memiliki nilai spesifisitas (0, 1, 0, 0) yang jauh lebih tinggi daripada Class selector (0, 0, 1, 0). Walaupun deklarasi class ditulis setelah ID di CSS, aturan dari ID selector akan tetap dimenangkan dan diterapkan oleh browser.
+    </div>
+</body>
+</html>

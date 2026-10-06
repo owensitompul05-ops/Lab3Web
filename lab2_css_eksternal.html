@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Eksternal</title>
+    <link rel="stylesheet" href="style_eksternal.css" type="text/css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            min-height: 80px;
+            border-bottom: 1px solid #77CCEF;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            color: #0F189F;
+            padding: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Implementasi <i>CSS Eksternal</i></h1>
+    </header>
+    <nav>
+        <a href="lab2_css_dasar.html">CSS Dasar</a>
+        <a href="lab2_css_eksternal.html" class="active">CSS Eksternal</a>
+        <a href="lab1_tag_dasar.html">HTML Dasar</a>
+    </nav>
+    <div id="intro">
+        <h1>Halaman CSS Eksternal</h1>
+        <p>Halaman ini menggunakan styling yang dipisahkan secara penuh ke file <code>style_eksternal.css</code>.</p>
+        <a class="button btn-primary" href="lab2_css_dasar.html">&larr; Kembali ke CSS Dasar</a>
+    </div>
+</body>
+</html>

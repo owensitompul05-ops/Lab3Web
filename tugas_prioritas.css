@@ -1,0 +1,9 @@
+/* CSS Eksternal untuk Uji Coba Prioritas */
+.uji-prioritas {
+    color: #2563eb; /* Warna Biru dari Eksternal */
+    font-size: 18px;
+    background-color: #f1f5f9;
+    padding: 15px;
+    border: 2px dashed #94a3b8;
+    margin-bottom: 15px;
+}
